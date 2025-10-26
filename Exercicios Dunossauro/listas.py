@@ -124,3 +124,19 @@ for i in range(5):
 print(mult)
 
 
+#Exercicio 8
+
+
+idade=[]
+altura=[]
+
+for i in range(5):
+    idade.append(int(input("Digite sua idade: ")))
+    altura.append(float(input("Digite sua altura: ")))
+
+i=4
+
+while i>=0:
+    print(idade[i])
+    print(altura[i])
+    i= i -1
