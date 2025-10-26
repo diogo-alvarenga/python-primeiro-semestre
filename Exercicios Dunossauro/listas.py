@@ -140,3 +140,62 @@ while i>=0:
     print(idade[i])
     print(altura[i])
     i= i -1
+
+
+#Exercicio 9
+
+
+vetor =[]
+
+for i in range(10):
+    vetor.append(int(input()))
+
+quadrado =0
+for i in range(10):
+    quadrado = vetor[i]*vetor[i]
+    print("O quadrado de ",vetor[i]," é ", quadrado)
+
+
+#Exercicio 10
+
+
+vetor1 = []
+vetor2 = []
+vetor3 = []
+for i in range(10):
+    vetor1.append(int(input()))
+
+for i in range(10):
+    vetor2.append(int(input()))
+    
+for i in range(10):
+    vetor3.append(vetor1[i])
+    vetor3.append(vetor2[i])
+print(vetor3)
+
+
+#Exercicio 11
+
+
+vetor1 = []
+vetor2 = []
+vetor3 = []
+vetor4 = []
+for i in range(10):
+    vetor1.append(int(input()))
+
+for i in range(10):
+    vetor2.append(int(input()))
+    
+for i in range(10):
+    vetor3.append(int(input()))
+    
+for i in range(10):
+    vetor4.append(vetor1[i])
+    vetor4.append(vetor2[i])
+    vetor4.append(vetor3[i])
+
+print(vetor4)
+
+
+#Exercicio 12
