@@ -199,3 +199,73 @@ print(vetor4)
 
 
 #Exercicio 12
+
+
+idade=[]
+altura=[]
+
+for _ in range(30):
+    idade.append(int(input()))
+    altura.append(float(input()))
+    
+media = 0.0
+for i in range(30):
+    media = media + altura[i]
+media = media/30
+
+quantidade = 0
+for i in range(30):
+    if idade[i] >13 and altura[i] < media:
+        quantidade = quantidade +1
+print(quantidade)
+
+
+#Exercicio 13
+
+
+temperatura =[]
+mes =["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
+for i in range(12):
+    temperatura.append(int(input()))
+
+
+for i in range(12):
+    print("A media da temperatura de ", mes[i], " foi ", temperatura[i])
+print("==============================")
+
+
+media = 0.0
+for i in range(12):
+    media = media+ temperatura[i]
+media = media/12
+
+print("A media de temperatura anual é ", media)
+print("==============================")
+
+for i in range(12):
+    if temperatura[i]> media:
+        print("No mes ", mes[i], " teve a media ", temperatura[i]," que supera a media anual")
+
+
+#Exercicio 14
+
+
+respostas = []
+perguntas = ["Telefonou para a vítima?","Esteve no local do crime?","Mora perto da vítima?","Devia para a vítima?","Já trabalhou com a vítima?"]
+probabilidade = 0
+for i in range(5):
+    print(perguntas[i])
+    respostas.append(input().lower().replace(" ",""))
+    if respostas[i] == "sim":
+        probabilidade +=1
+if probabilidade ==2:
+    print("Suspeito")
+elif probabilidade>= 3 and probabilidade <= 4:
+    print("Cumplice")
+elif probabilidade>4:
+    print("Assassino")
+else:
+    print("Inocente")
+
+
+    
